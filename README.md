@@ -55,50 +55,30 @@ Raw Data → Parsing → Cleaning → Feature Extraction
 
 ## 📂 Project Structure
 grant-intelligence-pipeline/
-
 │
-
-├── data/
-
-│   └── raw_grants.json
-
-│
-
-├── src/
-
-│   ├── scraper.py
-
-│   ├── parser.py
-
-│   ├── cleaner.py
-
-│   ├── scorer.py
-
-│   ├── llm_scorer.py
-
-│   ├── storage.py
-
-│   └── pipeline.py
-
-│
-
-├── app/
-
+├── app/                          # Streamlit frontend (UI layer)
 │   └── dashboard.py
-
 │
-
-├── output/
-
+├── data/                         # Raw input data
+│   └── raw_grants.json
+│
+├── src/                          # Core logic (backend / pipeline)
+│   ├── __init__.py               # Makes src a Python package
+│   ├── scraper.py                # Data ingestion
+│   ├── parser.py                 # Extract fields
+│   ├── cleaner.py                # Data cleaning
+│   ├── scorer.py                 # Rule-based scoring
+│   ├── llm_scorer.py             # LLM-based scoring (OpenAI)
+│   ├── storage.py                # Save structured data
+│   └── pipeline.py               # Orchestrates full pipeline
+│
+├── output/                       # Generated outputs
 │   └── structured_grants.csv
-
 │
-
-├── requirements.txt
-
-├── .env (not committed)
-
-└── README.md
+├── .env                          # API keys (NOT committed)
+├── .gitignore                    # Ignore sensitive/system files
+├── requirements.txt              # Dependencies
+└── README.md                     # Documentation
 
 ---
 
