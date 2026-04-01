@@ -1,0 +1,20 @@
+[
+  {
+    "title": "AI Research Grant",
+    "deadline": "2026-06-30",
+    "funding": "100000",
+    "description": "Funding for AI and machine learning research projects"
+  },
+  {
+    "title": "Education Innovation Grant",
+    "deadline": "2026-05-15",
+    "funding": "20000",
+    "description": "Support for education and digital learning initiatives"
+  },
+  {
+    "title": "Healthcare Data Grant",
+    "deadline": "2026-07-10",
+    "funding": "75000",
+    "description": "Research in healthcare analytics and data science"
+  }
+]
